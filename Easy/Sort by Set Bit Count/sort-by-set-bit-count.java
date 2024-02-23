@@ -47,12 +47,7 @@ class Compute
             public int compare(Integer o1, Integer o2) {
                 int a=Integer.bitCount(o1);
                 int b=Integer.bitCount(o2);
-                if(a>b)
-                    return -1;
-                else if (a<b) {
-                    return 1;
-                }
-                return 0;
+                return b-a;
             }
         }); 
 }
